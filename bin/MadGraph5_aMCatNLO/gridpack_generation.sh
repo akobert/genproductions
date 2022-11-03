@@ -598,6 +598,8 @@ make_gridpack () {
     #   mv ${DEBUGTARBALL} ${PRODHOME}/${DEBUGTARBALL}
     #   set -e
       
+      cp -r processtmp/ /afs/cern.ch/user/a/akobert/gridpack_flatZprime2/genproductions/bin/MadGraph5_aMCatNLO/
+
       echo "cleaning temporary output"
       mv $WORKDIR/processtmp/pilotrun_gridpack.tar.gz $WORKDIR/
       rm -rf processtmp
