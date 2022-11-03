@@ -241,8 +241,7 @@ C Rough cuts on mass, rho, and pT
 
               mass_weight = mass_Z(mZp)
               pt_weight = pt(pTy)
-              IF ((mass_weight .GT. 0) .AND. (pt_weight .GT. 0))
-THEN
+              IF ((mass_weight .GT. 0) .AND. (pt_weight .GT. 0)) THEN
                 bias_weight = 1. / (mass_weight * pt_weight)
               ELSE
                 bias_weight = 0.00000001
